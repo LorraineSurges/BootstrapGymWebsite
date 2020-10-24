@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
-    <link rel='stylesheet' href='css/style.css' />
+    <link rel='stylesheet' href='css/styles.css' />
 
     <title>Membership Info</title>
 </header>
@@ -25,11 +25,48 @@
                     <h2>Let's do this together!</h2>
                 </div>
                 <div class='col'>
-                    <a role='button' href='#' class='btn btn-info btn-lg'>Log-in</a>
+                    <a role='button' id='loginButton' class='btn jumbotronButtonStyle btn-lg'>Log-in</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id='loginModal' class='modal fade' role='dialog'>
+        <div class='modal-dialog' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header modalHeaderStyle text-white'>
+                    <h3 class='modal-title'>Login</h3>
+                    <button type='button' class='close text-white' data-dismiss='modal'>&times;</button>
+                </div>
+                <div class='modal-body'>
+                    <div class='container-fluid'>
+                        <form>
+                            <div class='form-row'>
+                                <div class='form-group col-12'>
+                                    <label id='loginEmail' class='sr-only'>Email address</label>
+                                    <input type='email' class='form-control' id='loginEmail' placeholder='Enter email' />
+                                </div>
+                                <div class='form-group col-12'>
+                                    <label id='loginPassword' class='sr-only'>Password</label>
+                                    <input type='password' class='form-control' id='loginPassword' placeholder='Password' />
+                                </div>
+                                <div class='col'>
+                                    <div class='form-check'>
+                                        <input class='form-check-input' type='checkbox' />
+                                        <label class='form-check-label'> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='form-row'>
+                                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancel</button>
+                                <button type='button' class='btn btn-primary ml-1'>Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <nav class='navbar navbar-expand-sm navbar-dark sticky-top'>
         <div class='container'>
@@ -50,7 +87,7 @@
     </nav>
 
     <div class='container'>
-        <div class='row'>
+        <!-- <div class='row'>
             <div class='col'>
                 <h2>Why Become a Member</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur lorem donec massa sapien faucibus et molestie ac. Erat velit scelerisque in dictum non consectetur a. Nisi vitae suscipit tellus mauris a diam. Est ultricies integer quis auctor elit.</p>
@@ -77,7 +114,7 @@
                     <li>Open Early and Close Late</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class='row'>
             <div class='col'>
                 <h3>Membership Levels &amp; Pricing</h3>
@@ -133,6 +170,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='js/script.js'></script>
 
 </body>
 </html>

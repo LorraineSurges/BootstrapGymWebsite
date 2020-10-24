@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
-    <link rel='stylesheet' href='css/style.css' />
+    <link rel='stylesheet' href='css/styles.css' />
 
     <title>Gym Website</title>
 </header>
@@ -25,7 +25,7 @@
                     <h2>Let's do this together!</h2>
                 </div>
                 <div class='col'>
-                    <a role='button' data-toggle='modal' data-target='#loginModal' class='btn btn-lg btn-secondary'>Log-in</a>
+                    <a role='button' class='btn btn-lg jumbotronButtonStyle' id='loginButton'>Log-in</a>
                 </div>
             </div>
         </div>
@@ -34,9 +34,9 @@
     <div id='loginModal' class='modal fade' role='dialog'>
         <div class='modal-dialog' role='document'>
             <div class='modal-content'>
-                <div class='modal-header'>
+                <div class='modal-header modalHeaderStyle text-white'>
                     <h3 class='modal-title'>Login</h3>
-                    <button type='button' class='close' data-dismiss='modal'>&times;</button>
+                    <button type='button' class='close text-white' data-dismiss='modal'>&times;</button>
                 </div>
                 <div class='modal-body'>
                     <div class='container-fluid'>
@@ -224,6 +224,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='js/script.js'></script>
 
 </body>
 </html>

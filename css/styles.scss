@@ -1,0 +1,27 @@
+$color-blue: #00416a;
+$color-green: #799f0c;
+$color-yellow: #ffe000;
+
+.navbar {
+    background-color: black;
+}
+.jumbotron {
+    margin: 0;
+    background-image: linear-gradient($color-blue, $color-green, $color-yellow);
+}
+.custom-row {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.sarah-img {
+    max-width: 40%;
+    height: auto;
+}
+.modalHeaderStyle {
+    background-color: $color-blue;
+}
+.jumbotronButtonStyle {
+    background-color: $color-blue;
+    color: white;
+}

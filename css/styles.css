@@ -1,0 +1,22 @@
+.navbar {
+  background-color: black; }
+
+.jumbotron {
+  margin: 0;
+  background-image: linear-gradient(#00416a, #799f0c, #ffe000); }
+
+.custom-row {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.sarah-img {
+  max-width: 40%;
+  height: auto; }
+
+.modalHeaderStyle {
+  background-color: #00416a; }
+
+.jumbotronButtonStyle {
+  background-color: #00416a;
+  color: white; }
